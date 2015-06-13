@@ -1,0 +1,62 @@
+html {
+	overflow-x: hidden;
+}
+
+body {
+	overflow-y: scroll;
+	width: 100vw;
+	margin: 0;
+	text-align: center;
+	font-family: courier;
+}
+
+header.hero {
+	margin: 0;
+	padding: 1px 10vw 0px 10vw;
+	height: 100vh;
+	background-image: url("file:bokeh.jpg");
+	background-size: cover;
+}
+
+h1.herotitle {
+	max-height: 25%;
+	padding-top: 25vh;
+	font-size: 5em;
+	color: white;
+}
+
+#profilepic {
+	max-height: 150px;
+	max-width: 150px;
+	border-radius:90px;
+}
+
+section.blog {
+	padding: 2vw 2vh;
+	height: 50vh;
+}
+
+aside.widget {
+	background-image: url("file:bokeh2.jpg");
+	background-size: cover;
+	padding:2vw 2vh;
+	height: 25vh;
+	vertical-align: middle;
+	margin-bottom: 4vh;
+}
+
+#cat {
+	border-radius: 90px;
+}
+
+.footer {
+	bottom: 0;
+	position: fixed;
+	color: white;
+	background-color: #0D122B;
+	font-size: 0.75em;
+	height: 4vh;
+	width: 100vw;
+	margin: 0px
+	padding: 0px;
+}
