@@ -1,62 +1,97 @@
-html {
-	overflow-x: hidden;
-}
+//scrollbar disabled//
 
 body {
-	overflow-y: scroll;
-	width: 100vw;
-	margin: 0;
+	overflow: hidden;
+}
+
+.scrollbar-container {
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: -17px;
+	bottom: 0;
+	margin: 0px;
 	text-align: center;
 	font-family: courier;
 }
 
-header.hero {
+.hero {
 	margin: 0;
-	padding: 1px 10vw 0px 10vw;
-	height: 100vh;
+	height: 100%;
 	background-image: url("file:bokeh.jpg");
 	background-size: cover;
+	background-attachment: fixed;
+	overflow: auto;
 }
 
-h1.herotitle {
-	max-height: 25%;
-	padding-top: 25vh;
-	font-size: 5em;
+.herotitle {
+	max-width: 75%;
+	font-size: 3.5em;
 	color: white;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #profilepic {
-	max-height: 150px;
-	max-width: 150px;
-	border-radius:90px;
-}
-
-section.blog {
-	padding: 2vw 2vh;
-	height: 50vh;
-}
-
-aside.widget {
-	background-image: url("file:bokeh2.jpg");
-	background-size: cover;
-	padding:2vw 2vh;
-	height: 25vh;
-	vertical-align: middle;
-	margin-bottom: 4vh;
+	min-width: 150px;
+	max-width: 25%;
+	border-radius:calc(50%);
 }
 
 #cat {
-	border-radius: 90px;
+	border-radius:calc(50%);
+	height: 150px;
+	width: 150px;
+	min-width: 5%;
+	min-height: 5%;
+}
+
+section.blog {
+	padding: 10% 2%;
+	min-height: 25%;
+	max-height: 75%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.widget {
+	min-height: 25%;
+	padding: 3% 3% 10vh 3%;
+	background-color: #FCF6E8;
+	border-collapse: separate;
+	border-spacing: 1vw 0;
+}
+
+.petwidget,.favwidget,.bucketwidget {
+	background-image: url("file:bokeh2.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: table-cell;
+	width: 25%;
+	color: white;
+	border-radius: 15px;
+}
+
+#dawnpic {
+	max-width: 50%;
+	border-radius: calc(50%);
+	border: 0px solid white;
+	/box-shadow: 5px 5px 30px black;
+
 }
 
 .footer {
-	bottom: 0;
-	position: fixed;
 	color: white;
-	background-color: #0D122B;
-	font-size: 0.75em;
+	background-color: #221C2E;
+	font-size: 0.65em;
 	height: 4vh;
 	width: 100vw;
-	margin: 0px
-	padding: 0px;
+	position: fixed;
+	bottom: 0px;
 }
